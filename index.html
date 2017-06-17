@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Merlin´s Potions </title>
+  </head>
+  <body>
+
+    <div class="container"> <!-- MAIN CONTAINER START -->
+      <header class="hidden-xs"> <!-- PAGE HEADER START -->
+            <div class="row">
+                <div class="col-sm-4 logo"> <!-- LOGO START -->
+                  <a href="index.html" class="title"> <b>  MERLIN´S</b> POTIONS  </a>
+                  <p class="subtitle"><em> &mdash; fine potions since 1026 &mdash; </em></p>
+                </div> <!-- LOGO END -->
+
+                <div class="col-sm-3"> <!-- SEARCH START -->
+                    <div class="input-group search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                          <input type="search" class="form-control" placeholder="Search our stock...">
+                    </div>
+                </div>  <!-- SEARCH END -->
+
+                <div class="col-sm-3"> <!-- SHIPPING START -->
+                      <p class="shipping text-right">Free Shipping</p>
+                      <p class="shippingSub text-right">on orders over $50 </p>
+                </div> <!-- SHIPPING -->
+
+                <div class="col-sm-2"><!-- CART START -->
+                    <div class="row">
+                        <div class="col-sm-4 img-cart zeropadding">
+                          <a href="#"><img src="img/cart.png" alt="Shopping Cart" class="img-responsive"></a>
+                        </div>
+                        <div class="col-sm-8 zeropadding">
+                          <p class="bag text-left">BAG:<a href="#" class="numBag">1</a></p>
+                        </div>
+                    </div>
+                </div> <!-- CART END -->
+            </div>
+
+            <nav class="navbar navbar-default menuDesktop"> <!-- DESKTOP NAVBAR START -->
+              <div class="row">
+                <div class="col-sm-9">
+                  <ul class="nav nav-pills">
+                      <li role="presentation" class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Potions<span class="caret"></span></a>
+                      </li>
+                      <li role="presentation" class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Ingredients<span class="caret"></span></a>
+                      </li>
+                      <li role="presentation" class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Books<span class="caret"></span></a>
+                      </li>
+                      <li role="presentation" class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Supplies<span class="caret"></span></a>
+                      </li>
+                      <li role="presentation" class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Charms<span class="caret"></span></a>
+                      </li>
+                      <li role="presentation" class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Clearance!</a>
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 text-center">
+                  <p><a href="#" class="signin">Sign In</a> or <a href="#" class="signin"> Sign Up </a></p>
+                </div>
+              </div>
+          </nav> <!-- DESKTOP NAVBAR END -->
+
+      </header><!-- PAGE HEADER END -->
+
+      <nav class="navbar navbar-default visible-xs menuMobile"> <!-- MOBILE NAVBAR START -->
+        <div class="navbar-header">
+            <div class="col-xs-2">
+                <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseNavMob" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-8 text-center">
+                <a class="titleMob" href="#"><b>MERLIN´S</b> POTIONS</a>
+                <p class="subtitleMob"><em> &mdash; fine potions since 1026 &mdash; </em></p>
+            </div>
+            <div class="col-xs-2 text-center">
+                <a href="#" class="cartMob"><img src="img/cart.png" alt="Shopping Cart">
+                <p>BAG: <span>1</span></p></a>
+            </div>
+            <div class="col-xs-12 text-center freeShip">
+                <p> Free shipping on orders over $50 </p>
+            </div>
+        </div>
+
+              <div class="collapse navbar-collapse" id="collapseNavMob">
+                  <div class="row searchMenuMob">
+                          <div class="col-xs-2  text-center" onclick="closeM()">
+                              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                          </div>
+                          <div class="col-xs-10">
+                              <div class="input-group">
+                                  <span class="input-group-addon">
+                                      <i class="fa fa-search"></i>
+                                 </span>
+                                 <input type="text" class="form-control" placeholder="Search our Stock..."/>
+                              </div>
+                          </div>
+                    </div>
+                 <ul class="nav navbar-nav purpleDrop">
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#" class="menuItemMob">Potions</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#" class="menuItemMob">Ingredients</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#" class="menuItemMob">Books</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#" class="menuItemMob">Supplies</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#" class="menuItemMob">Charms</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#" class="menuItemMob">Clearance!</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="last"><p class="text-center"><a href="#" >Sign In</a> or <a href="#"> Sign Up </a></p></li>
+                </ul>
+                <div class="text-center signInMob">
+
+                </div
+              </div>
+    </nav> <!-- MOBILE NAVBAR END -->
+
+      <div class="mainBody"><!-- MAIN BODY START -->
+
+          <h2 class="prodDesc">Potions</h2>
+          <div class="row"> <!-- PRODUCTS LIST START -->
+              <div class="col-xs-6 col-sm-4 productImg">
+                  <figure class="productImgPrice">
+                      <img src="img/aging-potion.png" class="img-responsive getData" alt="Aging Potion" onclick="openLight()" id="1" >
+                      <figcaption class="potionName text-center">Aging Potion - <span class="preco">$29.99</span></figcaption>
+                  </figure>
+              </div>
+              <div class="col-xs-6 col-sm-4 productImg">
+                  <figure class="productImgPrice">
+                      <img src="img/bulgeye-potion.png" class="img-responsive getData"  alt="Bulgeye Potion" onclick="openLight()"  id="2" >
+                      <figcaption class="potionName text-center">Bulgeye Potion - <span class="preco">$19.99</span></figcaption>
+                  </figure>
+              </div>
+              <div class="col-xs-6 col-sm-4 productImg">
+                  <figure class="productImgPrice">
+                      <img src="img/dragon-tonic.png" class="img-responsive getData" alt="Dragon Tonic" onclick="openLight()" id="3">
+                      <figcaption class="potionName text-center">Dragon Tonic - <span class="preco">$64.99</span></figcaption>
+                  </figure>
+              </div>
+              <div class="col-xs-6 col-sm-4 productImg">
+                  <figure class="productImgPrice">
+                      <img src="img/love-potion.png" class="img-responsive getData" alt="Love Potion" onclick="openLight()" id="4" >
+                      <figcaption class="potionName text-center">Love Potion - <span class="preco">$29.99</span></figcaption>
+                  </figure>
+              </div>
+              <div class="col-xs-6 col-sm-4 productImg">
+                  <figure class="productImgPrice">
+                      <img src="img/polyjuice-potion.png" class="img-responsive getData" alt="Polyjuice Potion" onclick="openLight()" id="5" >
+                      <figcaption class="potionName text-center">Polyjuice Potion - <span class="preco">$99.99</span></figcaption>
+                  </figure>
+              </div>
+              <div class="col-xs-6 col-sm-4 productImg">
+                  <figure class="productImgPrice">
+                      <img src="img/sleeping-draught.png" class="img-responsive getData" alt="Sleeping Draught" onclick="openLight()" id="6" >
+                      <figcaption class="potionName text-center">Sleeping Draught - <span class="preco">$14.99</span></figcaption>
+                  </figure>
+              </div>
+          </div> <!-- PRODUCTS LIST END -->
+
+
+          <div id="lightbox"> <!-- LIGHTBOX GAMBIARRA MASTER START -->
+              <div class="lightboxContent">
+                  <div class="row">
+                      <div class="col-xs-offset-10 col-xs-12">
+                          <button type="button" name="button" id="close"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 ">
+                          <img class="modalContent" id="gambiarraImagem" src="">
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                          <p class="gambName" id="gambiarraName"></p>
+                          <p class="titleLight"> Use/Effect </p>
+                          <p class="gamb" id="gambiarraEffect"></p>
+                          <p class="titleLight"> Ingredients </p>
+                          <p class="gamb" id="gambiarraIngredients"></p>
+                          <p class="titleLight"> Price </p>
+                          <p class="gambPrice" id="gambiarraPrice">$ </p>
+                          <button type="button" name="button" class="btn btn-default btncart"> ADD TO CART </button>
+                      </div>
+                  </div>
+              </div>
+         </div> <!-- LIGHTBOX GAMBIARRA MASTER END -->
+
+
+
+        <footer > <!-- FOOTER START -->
+            <div class="row">
+                <div class="col-sm-6 hidden-xs"> <!-- DESKTOP DIV -->
+                        <ul class="nav nav-pills"> <!-- FOOTER MENU START -->
+                            <li role="presentation"><a href="#">COMPANY</a></li>
+                            <li role="presentation"><a href="#">CONTACT US</a></li>
+                            <li role="presentation"><a href="#">SHIPPING</a></li>
+                            <li role="presentation"><a href="#">RETURNS</a></li>
+                            <li role="presentation"><a href="#">CAREERS</a></li>
+                        </ul><!-- FOOTER MENU END -->
+
+                        <div class="social"><!-- SOCIAL START -->
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                            <a href="#"><i class="fa fa-tumblr-square"></i></a>
+                            <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                        </div><!-- SOCIAL END -->
+
+                    <p class="copy">&copy; 2015 Merlin´s Potions. All Rights Reserved</p>
+                </div><!-- DESKTOP DIV END -->
+
+                <div class="col-xs-12 col-sm-6 newsletter well-lg"><!-- NEWSLETTER START -->
+                    <p class="newsTitle text-center">Sign up for our Newsletter</p>
+                    <p class="newsSubt text-center">Sign up for our Newsletter &amp; get exclusive discounts!</p>
+                    <center>
+                        <form class="form-inline" action="#" method="post">
+                            <input type="text" name="email" placeholder="Enter your email" class="form-control">
+                            <button type="submit" name="newsButton" class="btn btn-default" class="submitEmail">SUBMIT</button>
+                        </form>
+                    </center>
+                </div> <!-- NEWSLETTER END -->
+
+                <div class="col-xs-12 visible-xs"><!-- MOBILE DIV -->
+                    <div class="social text-center"><!-- SOCIAL START -->
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                        <a href="#"><i class="fa fa-tumblr-square"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                    </div><!-- SOCIAL END -->
+
+                <p class="copy text-center">&copy; 2015 Merlin´s Potions. All Rights Reserved</p>
+
+                </div><!-- MOBILE DIV END-->
+            </div>
+        </footer> <!-- FOOTER END -->
+      </div><!-- MAIN BODY END -->
+
+
+    </div> <!-- MAIN CONTAINER END -->
+
+      <script type="text/javascript" src="js/jquery-2.1.4.min.js"> </script>
+      <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+      <script type="text/javascript" src="js/js.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,350 @@
+/********** VARIABLES **********/
+@purple: #4f336d;
+@purpleHover: #422a53;
+@orange:#d73a1e;
+@grey: #333;
+@greyFooter: #e6e6e6;
+@white: #fff;
+@black: #000;
+@droid: 'Droid Sans', sans-serif;
+@oswald: 'Oswald', sans-serif;
+
+.zeropad {
+    padding: 0;
+}
+
+.logotitle {
+    font-family: @oswald;
+    color: @orange;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/********** END VARIABLES **********/
+
+/********** MAIN **********/
+
+.zeropadding {
+    .zeropad;
+}
+
+/********** END MAIN **********/
+
+/********** HEADER **********/
+
+header {
+    padding-top: 3%;
+    .logo{
+        padding-left: 4%;
+    }
+    .title {
+        .logotitle;
+    }
+    .subtitle {
+        font-family: @droid;
+    }
+    .search{
+        margin-top: 3%;
+    }
+    .glyphicon-search {
+        color: @orange;
+    }
+    .shipping{
+        font: italic 1.4em @droid;
+        color: @orange;
+    }
+    .shippingSub{
+        font: italic 1em @droid;
+        color: @orange;
+    }
+
+    .bag {
+        font: normal 1.4em @oswald;
+        color: lighten(@grey, 50%);
+        letter-spacing: 0.2em;
+        text-align: left;
+        margin-top: 5%;
+    }
+    .numBag {
+        text-decoration: none;
+        color: @orange;
+        font-weight: bold;
+    }
+
+    nav.menuDesktop {
+        background-color: @purple;
+        padding: 1%;
+        a {
+            text-decoration: none;
+            color: @white;
+            font: normal 1.1em @droid;
+        }
+        a:hover {
+            background-color: @purpleHover;
+        }
+        a:focus {
+            background-color: @white;
+            color: @purple;
+            font-weight: bold;
+        }
+        p{
+            color: @white;
+            font-family: @droid;
+            margin-top: 4%;
+        }
+        .signin {
+            padding: 5%;
+            font-size: 1.1em;
+        }
+
+    }
+}
+
+/********** END HEADER **********/
+
+/********** NAVBAR MOBILE **********/
+
+nav.menuMobile {
+    background-color: @white;
+    padding: 2%;
+    border: 0 !important;
+    button{
+        border: 0 !important;
+    }
+    .icon-bar{
+        background-color: @purple !important;
+    }
+    .titleMob {
+        .logotitle
+    }
+    .subtitleMob {
+        font-family: @droid;
+        color: @purple;
+    }
+    .cartMob {
+        text-decoration: none;
+        font-family: @oswald;
+        color: lighten(@grey, 50%);
+        span {
+            color: @orange;
+            font-weight: bold;
+        }
+        img {
+            margin-bottom: 10%;
+        }
+    }
+    .freeShip {
+        background-color: @greyFooter;
+        font: italic 1.2em @droid;
+        p {
+            margin: auto;
+            margin: 2%;
+        }
+    }
+}
+
+div[id=collapseNavMob]{
+    .glyphicon-remove {
+        font-size: 2em;
+        color: @purple;
+    }
+    .searchMenuMob {
+        padding: 4%;
+        i.fa {
+            color: @orange;
+        }
+    }
+    .purpleDrop {
+        background-color: @purple;
+        a.menuItemMob {
+            text-decoration: none;
+            color: @white;
+            font: italic 1.2em @droid;
+            padding: 4%;
+            border-bottom: 1px solid fade(@greyFooter, 50%);
+        }
+        a.menuItemMob:hover {
+            background-color: @purpleHover;
+            color: @white;
+        }
+        a.menuItemMob:focus {
+            background-color: @purpleHover;
+            color: @white;
+            font-weight: bold;
+        }
+        .last {
+            padding: 8% 0 1% 0;
+            color: @white;
+        }
+            a{
+                text-decoration: none;
+                font: italic 1.2em @droid;
+                color: @white;
+                padding: 3%;
+            }
+    }
+}
+
+/********** END NAVBAR MOBILE **********/
+
+/********** MAIN BODY **********/
+
+div.mainBody {
+    h2{
+        padding: 2%;
+        font: normal 1.8em @oswald;
+    }
+    .potionName{
+        color: @grey;
+        font: normal 1.3em @oswald;
+    }
+    .productImg {
+        margin-bottom: 5%;
+    }
+    .productImgPrice{
+        cursor: pointer;
+    }
+    .preco {
+        color: @orange;
+        font-weight: bold;
+    }
+}
+
+/********** END MAIN BODY **********/
+
+/********** FOOTER **********/
+
+footer {
+    background-color: @greyFooter;
+    padding: 5%;
+    .nav a {
+        color: @orange;
+    }
+
+    .social{
+        padding: 1%;
+    }
+
+    i.fa {
+        font-size: 35px;
+        color: @purple;
+        padding: 2%;
+    }
+    .copy {
+        padding: 2%;
+        font: italic 0.9em @droid;
+    }
+
+    .newsletter {
+        background-color: @white;
+        .newsTitle {
+            font: italic 1.2em @droid;
+            padding: 2%;
+        }
+        .newsSubt {
+            font: normal 1em @droid;
+            margin-bottom: 5%;
+        }
+        button.btn {
+            background-color: @orange;
+            font: normal 1.2em @droid;
+            color: @white;
+        }
+        input[name=email] {
+            display: inline-block;
+            width: 60%;
+        }
+
+    }
+}
+
+/********** END FOOTER **********/
+
+/********** MEDIA QUERIES **********/
+
+@media only screen and (max-width: 767px) {
+    body h2.prodDesc {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav.menuMobile {
+        .titleMob{
+            font-size: 1.3em;
+        }
+        .subtitleMob {
+            font-size: 0.9em;
+        }
+        .cartMob {
+            img{
+                display: none;
+            }
+        }
+    }
+    footer{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    div.mainBody a {
+        font-size: 0.9em;
+    }
+}
+/********** MEDIA QUERIES END**********/
+
+/********** LIGHTBOX GAMBIARRA **********/
+
+
+div#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    .lightboxContent {
+        background-color: @white;
+        margin: 10% auto;
+        width: 70%;
+        padding: 2%;
+    }
+    #close {
+        padding: 1%;
+        span.glyphicon-remove {
+            font-size: 1.8em;
+            color: @purple;
+        }
+    }
+    .titleLight {
+        font: italic bold 1.3em @oswald;
+    }
+    .gamb {
+        font: normal 1em @droid;
+        margin-bottom: 4%;
+    }
+    .gambName {
+        font: normal bold 1.5em @oswald;
+        margin-bottom: 4%;
+    }
+    .gambPrice {
+        font: normal bold 1.3em @droid;
+        color: @orange;
+    }
+    .modalContent {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .btncart {
+        background-color: @orange;
+        padding: 3%;
+        color: @white;
+        font: normal 1.2em @oswald;
+    }
+}
+
+/********** LIGHTBOX GAMBIARRA END **********/
